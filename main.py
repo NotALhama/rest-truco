@@ -9,7 +9,7 @@ class Server:
     url = "https://deckofcardsapi.com"
     players = []
     
-    def _init_(self):
+    def __init__(self):
         self.deck_id = ""
 
     def genDeck(self):
@@ -37,7 +37,7 @@ class Client:
     hand = []
     burn_counter = 0
     
-    def _init_(self, id):
+    def __init__(self, id):
         self.deck_id = id
     
     def draw(self):
